@@ -16,4 +16,4 @@ jobs:
           send-email-to: 'ravi.swaminathan@jpmchase.com'
       # Use the output from the `hello` step
       - name: Get the output time
-        run: echo "The time was ${{ steps.emailsent.outputs.time }}"
+        run: echo "This time was ${{ steps.emailsent.outputs.time }}"
