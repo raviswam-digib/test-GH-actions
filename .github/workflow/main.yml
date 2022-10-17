@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  send-email:
+    runs-on: ubuntu-latest
+    name: Test Send email
+    steps:
+      - name: "Send email"
+        id: "emailsent"
+        uses: raviswam/@v1.1
+        with:
+          send-email-to: 'ravi.swaminathan@jpmchase.com'
+      # Use the output from the `hello` step
+      - name: Get the output time
+        run: echo "The time was ${{ steps.emailsent.outputs.time }}"
