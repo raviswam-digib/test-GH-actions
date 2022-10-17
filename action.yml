@@ -4,14 +4,9 @@ inputs:
   sendemailid:
     description: will send email to these
     required: true
-    default: Ravi
   msgforemail:
     description: add this message to email
     required: true
-    default: Hello!!!! ravi.swaminathanjpmchase.com please approve
-outputs:
-  time:
-    description: The time we greeted you
 runs:
   using: node16
   main: dist\index.js
