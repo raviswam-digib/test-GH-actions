@@ -1,17 +1,17 @@
-name: 'send approval email'
-description: 'Request approval'
+name: send approval email
+description: Request approval
 inputs:
-  sendemailid:  
-    description: 'will send email to these'
+  sendemailid:
+    description: will send email to these
     required: true
-    default: 'Ravi'
-  msgforemail:  # email id
-    description: 'add this message to email'
+    default: Ravi
+  msgforemail:
+    description: add this message to email
     required: true
-    default: 'Hello!!!! ravi.swaminathanjpmchase.com please approve'
+    default: Hello!!!! ravi.swaminathanjpmchase.com please approve
 outputs:
-    time: # id of output
-      description: 'The time we greeted you'
+  time:
+    description: The time we greeted you
 runs:
-  using: 'node16'
-  main:  'dist\index.js'
+  using: node16
+  main: dist\index.js
