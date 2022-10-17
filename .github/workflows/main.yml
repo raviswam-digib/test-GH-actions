@@ -10,7 +10,8 @@ jobs:
           fetch-depth: 0
       - name: 'Send email'
         id: 'emailsent'
-        uses: 'raviswam-digib/test-GH-actions'
+        ref: ''
+        uses: raviswam-digib/test-GH-actions@ref
         #  with:
         #    send-email-to: 'ravi.swaminathan@jpmchase.com'
       # Use the output from the `hello` step
