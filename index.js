@@ -2,8 +2,8 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 
 try {
-  const sendEmail = core.getInput('send-email-id');
-  const msgToSend = core.getInput('msg-to-send');
+  const sendEmail = core.getInput('sendemailid');
+  const msgToSend = core.getInput('msgtosend');
   console.log(`Hello ${sendEmail}!`);
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
