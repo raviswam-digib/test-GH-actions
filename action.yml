@@ -1,0 +1,17 @@
+name: 'send approval email'
+description: 'Request approval'
+inputs:
+  send-email-id:  # email id
+    description: 'will send email to these"
+    required: true
+    default: 'ravi.swaminathan@jpmchase.com'
+  msg-for-email:  # email id
+    description: 'add this message to email'
+    required: true
+    default: 'Hello ravi.swaminathan@jpmchase.com please approve'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node16'
+  main: 'index.js'
