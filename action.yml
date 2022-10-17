@@ -2,7 +2,7 @@ name: 'send approval email'
 description: 'Request approval'
 inputs:
   send-email-id:  # email id
-    description: 'will send email to these"
+    description: 'will send email to these'
     required: true
     default: 'ravi.swaminathan@jpmchase.com'
   msg-for-email:  # email id
