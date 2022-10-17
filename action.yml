@@ -1,9 +1,9 @@
-name: send approval email
-description: Request approval
+name: 'send approval email'
+description: 'ARequest approval'
 inputs:
   sendemailid:
-    description: will send email to these
+    description: 'will send email to these'
     required: true
 runs:
-  using: node16
-  main: dist\index.js
+  using: 'node16'
+  main:  'dist\index.js'
