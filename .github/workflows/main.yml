@@ -11,7 +11,7 @@ jobs:
           ref: 'v1.1'
       - name: "Send email"
         id: "emailsent"
-        uses: raviswam-digib/test-GH-actions@v3.1
+        uses: raviswam-digib/test-GH-actions@latest
         #  with:
         #    send-email-to: 'ravi.swaminathan@jpmchase.com'
       # Use the output from the `hello` step
