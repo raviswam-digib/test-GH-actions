@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: "Send email"
         id: "emailsent"
-        uses: raviswam/@v1.1
+        uses: raviswam-digib/test-GH-actions@v1.1
         with:
           send-email-to: 'ravi.swaminathan@jpmchase.com'
       # Use the output from the `hello` step
