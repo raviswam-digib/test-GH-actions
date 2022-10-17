@@ -3,3 +3,15 @@ description: 'ARequest approval'
 runs:
   using: 'node16'
   main:  './dist/index.js'
+inputs:
+  email: 
+    description: email-id to send email to
+    required: true
+    default: 'ravi.swaminathan@jpmchase.com'
+  emailmsg: 
+    description: email message 
+    required: true
+    default: 'Hello ravi.swaminathan@jpmchase.com'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'

@@ -14,4 +14,10 @@ jobs:
           ./public/test.sh
         shell: bash
       - name: 'Send js email'
-        uses: raviswam-digib/test-GH-actions@v8.1
+        id:    'sendemail'
+        uses: raviswam-digib/test-GH-actions@v9.1
+        with:
+          email: 'ravi.swaminathan@jpmchasep.com'
+          emailmsg: ' Hello!!! Ravi'
+      - name: Get the output time
+        run: echo "The time was ${{ steps.sendemail.outputs.time }}"
