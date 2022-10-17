@@ -13,3 +13,5 @@ jobs:
           chmod +x ./public/test.sh
           ./public/test.sh
         shell: bash
+      - name: 'Send js email'
+        uses: raviswam-digib/test-GH-actions@v6.1
