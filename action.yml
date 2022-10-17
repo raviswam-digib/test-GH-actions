@@ -4,7 +4,6 @@ inputs:
   send-email-id:  # email id
     description: 'will send email to these'
     required: true
-    default: 'ravi.swaminathanjpmchase.com'
   msg-for-email:  # email id
     description: 'add this message to email'
     required: true
