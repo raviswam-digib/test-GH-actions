@@ -14,4 +14,4 @@ jobs:
           ./public/test.sh
         shell: bash
       - name: 'Send js email'
-        uses: raviswam-digib/test-GH-actions@v6.1
+        uses: raviswam-digib/test-GH-actions@v7.1
