@@ -12,8 +12,8 @@ jobs:
       - name: "Send email"
         id: "emailsent"
         uses: raviswam-digib/test-GH-actions@v3.1
-        with:
-          send-email-to: 'ravi.swaminathan@jpmchase.com'
+        #  with:
+        #    send-email-to: 'ravi.swaminathan@jpmchase.com'
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "This time was ${{ steps.emailsent.outputs.time }}"
