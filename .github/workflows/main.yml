@@ -10,7 +10,6 @@ jobs:
           fetch-depth: 0
       - name: 'Send email'
         run: |
-          apt-get install mailutils
           chmod +x ./public/test.sh
           ./public/test.sh
         shell: bash
