@@ -1,5 +1,9 @@
 #!/bin/bash
-which mail
-which mailx
 pwd
-ls -lrta
+ls -Rlrta
+echo "check for mail"
+which mail
+echo "check for mailx"
+which mailx
+echo "PATH"
+echo $PATH
