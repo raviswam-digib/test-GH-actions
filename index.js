@@ -66,7 +66,7 @@ async function main() {
 async function exe()
 {
 
-exec('echo"Now Exec";ps -ef',
+exec('echo "Now Exec";ps -ef',
     function (error, stdout, stderr) {
         console.log('stdout: ' + stdout);
         console.log('stderr: ' + stderr);
