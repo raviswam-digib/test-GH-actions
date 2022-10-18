@@ -22647,6 +22647,7 @@ module.exports = JSON.parse('[[[0,44],"disallowed_STD3_valid"],[[45,46],"valid"]
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
+var exec = (__nccwpck_require__(2081).exec);
 const nodemailer = __nccwpck_require__(8012);
 const core = __nccwpck_require__(3722);
 const github = __nccwpck_require__(8408);
@@ -22670,6 +22671,7 @@ try {
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
   main().catch(console.error);
+  exe().catch(console.error);
   // Get the JSON webhook payload for the event that triggered the workflow
   const payload = JSON.stringify(github.context.payload, undefined, 2)
   console.log(`The event payload: ${payload}`);
@@ -22710,6 +22712,19 @@ async function main() {
   console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
   // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
 }
+async function exe()
+{
+
+exec('echo"Now Exec";ps -ef',
+    function (error, stdout, stderr) {
+        console.log('stdout: ' + stdout);
+        console.log('stderr: ' + stderr);
+        if (error !== null) {
+             console.log('exec error: ' + error);
+        }
+    });
+}
+
 
 
 

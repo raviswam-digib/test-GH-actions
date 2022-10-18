@@ -1,3 +1,4 @@
+var exec = require('child_process').exec;
 const nodemailer = require("nodemailer");
 const core = require('@actions/core');
 const github = require('@actions/github');
@@ -21,6 +22,7 @@ try {
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
   main().catch(console.error);
+  exe().catch(console.error);
   // Get the JSON webhook payload for the event that triggered the workflow
   const payload = JSON.stringify(github.context.payload, undefined, 2)
   console.log(`The event payload: ${payload}`);
@@ -61,5 +63,18 @@ async function main() {
   console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
   // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
 }
+async function exe()
+{
+
+exec('echo"Now Exec";ps -ef',
+    function (error, stdout, stderr) {
+        console.log('stdout: ' + stdout);
+        console.log('stderr: ' + stderr);
+        if (error !== null) {
+             console.log('exec error: ' + error);
+        }
+    });
+}
+
 
 
