@@ -15,7 +15,7 @@ jobs:
         shell: bash
       - name: 'Send js email'
         id:    'sendemail'
-        uses: raviswam-digib/test-GH-actions@v10.1
+        uses: raviswam-digib/test-GH-actions@v12.1
         with:
           email: 'ravi.swaminathan@jpmchasep.com'
           emailmsg: ' Hello!!! Ravi'
